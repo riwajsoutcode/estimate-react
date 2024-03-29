@@ -19,7 +19,7 @@ const Login = () => {
 
     return (
         <div className="login-container">
-            <div className="container h-100">
+            <div className="container-fluid h-100">
                 <h1 className="page-title">Estimate Out</h1>
 
                 <form className={'auth-form'} onSubmit={handleSubmit}>
@@ -48,13 +48,13 @@ const Login = () => {
                         />
                     </div>
                     <br/>
-                    <button className={'btn btn-login'} type="submit">Log In</button>
+                    <button className={'btn btn-primary btn-login'} type="submit">Log In</button>
                 </form>
 
                 <div className="footer">
                     <div className="d-flex align-items-center">
                         <img className="copyright-img" src={logo} alt="outcode-logo"/>
-                            <span className="page-title">Outcode Software</span>
+                            <span className="page-title p-0">Outcode Software</span>
                     </div>
                     <div className="copyright">
                         Copyright © {currentYear} Outcode. All rights reserved.
