@@ -1,6 +1,7 @@
 import React from 'react';
 import {BrowserRouter as Router, Navigate, Route, Routes} from 'react-router-dom';
 import Login from "./views/auth/Login/Login";
+import Welcome from "./views/pages/Welcome/Welcome";
 
 const RoutesComponent  = () => {
     return (
@@ -12,7 +13,7 @@ const RoutesComponent  = () => {
                     <Route path="/login" element={<Login />} />
                     <Route path="/" element={<Navigate to="/login" />} />
                     {/* Other routes */}
-                    {/* <Route path="/about" element={<About />} /> */}
+                     <Route path="/welcome" element={<Welcome />} />
                     {/* <Route path="/dashboard" element={<Dashboard />} /> */}
                     {/* Default route */}
                     {/* <Route path="/" element={<Home />} /> */}

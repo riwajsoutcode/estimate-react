@@ -1,12 +1,14 @@
 import React, {useState} from 'react';
 import './Login.css';
 import logo from '../../../assets/images/outcode.png'
+import {useNavigate} from "react-router-dom";
 
 const Login = () => {
     // State variables for username and password
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
     const currentYear = new Date().getFullYear();
+    const navigate = useNavigate();
 
     // Function to handle form submission
     const handleSubmit = (e) => {
@@ -15,6 +17,8 @@ const Login = () => {
         console.log('Login submitted');
         console.log('Username:', username);
         console.log('Password:', password);
+        navigate('/welcome');
+
     };
 
     return (
